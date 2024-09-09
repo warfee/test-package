@@ -1,0 +1,42 @@
+{
+    "name": "warfee/test-package",
+    "description": "test-package",
+    "keywords": [
+        "warfee",
+        "test-package"
+    ],
+    "homepage": "https://github.com/warfee/test-package",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "warfee",
+            "email": "warfee619916@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Warfee\\TestPackage\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Warfee\\TestPackage\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
