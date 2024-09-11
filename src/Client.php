@@ -30,6 +30,13 @@ class Client
 
     }
 
+    public function mappingData(...$arrays){
+
+        $mergedData = array_merge(...$arrays);
+
+        return $mergedData;
+    }
+
     public function submit(){
 
         try{
